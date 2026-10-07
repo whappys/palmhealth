@@ -1,47 +1,53 @@
 import { getAllPosts } from '@/lib/posts';
-import Link from 'next/link';
+import Header from '@/components/Header';
+import BreakingNews from '@/components/BreakingNews';
+import BlogCard from '@/components/BlogCard';
+import Sidebar from '@/components/Sidebar';
 
 export default async function Home() {
   const posts = await getAllPosts();
 
   return (
-    <main className="max-w-4xl mx-auto px-4 py-12">
-      <h1 className="text-4xl font-bold text-gray-900 mb-8 text-center">
-        Blog de PALM Health
-      </h1>
+    <div className="min-h-screen bg-gray-50">
+      <Header />
+      <BreakingNews />
       
-      <div className="grid gap-8">
-        {posts.length > 0 ? (
-          posts.map((post) => (
-            <article key={post.slug} className="bg-white border border-gray-200 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow">
-              <span className="text-xs font-bold text-red-600 uppercase tracking-wide">
-                {post.category}
-              </span>
-              <h2 className="text-2xl font-bold text-gray-900 mt-2 mb-3">
-                {post.title}
-              </h2>
-              <p className="text-gray-600 mb-4">{post.excerpt}</p>
-              <div className="flex items-center justify-between">
-                <time className="text-sm text-gray-500">
-                  {new Date(post.date).toLocaleDateString('es-ES', {
-                    year: 'numeric', month: 'long', day: 'numeric'
-                  })}
-                </time>
-                <Link 
-                  href={`/${post.slug}`}
-                  className="text-red-600 font-semibold hover:text-red-800 hover:underline"
-                >
-                  Leer artículo →
-                </Link>
-              </div>
-            </article>
-          ))
-        ) : (
-          <p className="text-center text-gray-500">
-            No hay artículos aún. ¡Crea tu primer archivo .md en la carpeta <code>content/posts/</code>!
-          </p>
-        )}
-      </div>
-    </main>
+      <main className="max-w-7xl mx-auto px-4 py-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {/* Columna principal con los posts */}
+          <div className="lg:col-span-2 space-y-8">
+            {posts.length > 0 ? (
+              posts.map((post) => (
+                <BlogCard
+                  key={post.slug}
+                  slug={post.slug}
+                  title={post.title}
+                  category={post.category}
+                  excerpt={post.excerpt}
+                  date={post.date}
+                  coverImage={post.coverImage}
+                />
+              ))
+            ) : (
+              <p className="text-center text-gray-500 py-12">
+                No hay artículos aún.
+              </p>
+            )}
+          </div>
+
+          {/* Sidebar */}
+          <div className="lg:col-span-1">
+            <Sidebar />
+          </div>
+        </div>
+      </main>
+
+      {/* Footer simple */}
+      <footer className="bg-gray-900 text-white py-8 mt-12">
+        <div className="max-w-7xl mx-auto px-4 text-center">
+          <p className="text-sm">© 2026 PALM Health. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
   );
 }

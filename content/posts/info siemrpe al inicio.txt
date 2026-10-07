@@ -1,0 +1,9 @@
+---
+title: "titulo de la publicacion"
+date: "2026-10-08"
+category: "SALUD GLOBAL"  ##esto se convierte en menu##
+tags: ["salud", "internacional", "bienestar", "sistemas de salud"]
+excerpt: "una introduccion o descripcion de busqueda."
+coverImage: "link de la imagen de portada"
+---
+

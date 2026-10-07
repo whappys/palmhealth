@@ -1,6 +1,4 @@
 import { getAllPosts } from '@/lib/posts';
-import Header from '@/components/Header';
-import BreakingNews from '@/components/BreakingNews';
 import BlogCard from '@/components/BlogCard';
 import Sidebar from '@/components/Sidebar';
 
@@ -9,9 +7,6 @@ export default async function Home() {
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
-      <BreakingNews />
-      
       <main className="max-w-7xl mx-auto px-4 py-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Columna principal con los posts */}
@@ -35,14 +30,13 @@ export default async function Home() {
             )}
           </div>
 
-          {/* Sidebar */}
+          {/* Sidebar con Popular Posts reales */}
           <div className="lg:col-span-1">
-            <Sidebar />
+            <Sidebar posts={posts} />
           </div>
         </div>
       </main>
 
-      {/* Footer simple */}
       <footer className="bg-gray-900 text-white py-8 mt-12">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <p className="text-sm">© 2026 PALM Health. Todos los derechos reservados.</p>

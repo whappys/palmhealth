@@ -29,17 +29,14 @@ export default function Header() {
       {/* Sección del logo y descripción */}
       <div className="bg-white py-8">
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center md:items-start gap-6">
-          {/* Logo */}
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-2">
-              {/* Aquí puedes reemplazar con tu logo real */}
-              <div className="text-4xl font-bold text-gray-900">
-                <span className="text-[#e91e4d]">PALM</span> Health
+              <div className="text-4xl font-bold">
+                <span className="text-[#e91e4d]">PALM</span> <span className="text-gray-900">Health</span>
               </div>
               <div className="text-sm text-gray-600 -mt-2">STORE</div>
             </Link>
           </div>
-          {/* Descripción */}
           <p className="text-gray-700 text-sm max-w-md">
             PALM HEALTH COMPARTE INFORMACIÓN SOBRE SALUD, NUTRICIÓN, BIENESTAR Y HÁBITOS PARA MEJORAR LA CALIDAD DE VIDA.
           </p>
@@ -50,7 +47,7 @@ export default function Header() {
       <div className="bg-gray-800 py-3">
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-end">
           <button className="bg-[#e91e4d] text-white px-4 py-2 rounded hover:bg-[#c4163f]">
-            🔍
+            
           </button>
         </div>
       </div>

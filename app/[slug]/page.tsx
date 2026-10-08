@@ -66,9 +66,10 @@ export default async function BlogPost({ params }: PageProps) {
         />
       )}
 
+      {/* ✅ AQUÍ EL CAMBIO CLAVE: post.contentHtml en lugar de post.content */}
       <div 
         className="prose prose-lg max-w-none"
-        dangerouslySetInnerHTML={{ __html: post.content }}
+        dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
     </article>
   );

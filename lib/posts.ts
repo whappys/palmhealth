@@ -13,7 +13,7 @@ export interface Post {
   category: string;
   excerpt: string;
   coverImage?: string;
-  content: string;
+  contentHtml: string;
   author: string;
 }
 

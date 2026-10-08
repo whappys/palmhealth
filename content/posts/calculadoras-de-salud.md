@@ -7,7 +7,7 @@ coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&
 tags: ["calculadoras", "salud", "bienestar", "herramientas", "evaluación"]
 ---
 
-![Calculadoras de Salud](https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=400&fit=crop)
+
 
 Bienvenido a nuestra colección de **calculadoras de salud gratuitas**. Estas herramientas interactivas te ayudarán a evaluar diferentes aspectos de tu salud, desde el riesgo cardiovascular hasta el bienestar metabólico.
 

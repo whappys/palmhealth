@@ -35,7 +35,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     category: data.category || '',
     excerpt: data.excerpt || '',
     coverImage: data.coverImage,
-    content: contentHtml,
+    contentHtml: contentHtml,
     author: data.author || 'AL HAPPY',
   };
 }

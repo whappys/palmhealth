@@ -28,10 +28,11 @@ export default async function CategoriaPage({ params }: PageProps) {
   const { slug } = await params;
   const posts = await getAllPosts();
   
-  // Filtrar posts por categoría (comparación sin importar mayúsculas/minúsculas)
-  const categoryName = slug.replace(/-/g, ' ').toLowerCase();
+  // CORRECCIÓN: Comparamos slug con slug para que coincidan perfectamente
+  const targetSlug = slug.toLowerCase();
+  
   const filteredPosts = posts.filter(post => 
-    post.category.toLowerCase().replace(/\s+/g, '-') === categoryName
+    post.category.toLowerCase().replace(/\s+/g, '-') === targetSlug
   );
 
   // Si no hay posts en esta categoría, mostrar 404
@@ -45,7 +46,7 @@ export default async function CategoriaPage({ params }: PageProps) {
     <div className="min-h-screen bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 py-8">
         {/* Título de la categoría */}
-        <div className="mb-8">
+        <div className="mb-8 pb-4 border-b-2 border-[#e91e4d]">
           <h1 className="text-4xl font-bold text-gray-900">
             {categoryTitle}
           </h1>
@@ -72,16 +73,16 @@ export default async function CategoriaPage({ params }: PageProps) {
 
           {/* Sidebar con otras categorías */}
           <div className="lg:col-span-1">
-            <div className="bg-white border border-gray-200 rounded-lg p-6">
+            <div className="bg-white border border-gray-200 rounded-lg p-6 sticky top-4">
               <h3 className="text-xl font-bold text-gray-900 mb-4">Otras Categorías</h3>
               <div className="space-y-2">
                 {Array.from(new Set(posts.map(p => p.category)))
-                  .filter(cat => cat.toLowerCase().replace(/\s+/g, '-') !== categoryName)
+                  .filter(cat => cat.toLowerCase().replace(/\s+/g, '-') !== targetSlug)
                   .map((cat) => (
                     <a
                       key={cat}
                       href={`/categoria/${cat.toLowerCase().replace(/\s+/g, '-')}`}
-                      className="block text-sm text-gray-700 hover:text-[#e91e4d] hover:bg-gray-50 px-2 py-1 rounded transition-colors"
+                      className="block text-sm text-gray-700 hover:text-[#e91e4d] hover:bg-gray-50 px-3 py-2 rounded transition-colors"
                     >
                       {cat}
                     </a>

@@ -15,6 +15,7 @@ export interface Post {
   coverImage?: string;
   contentHtml: string;
   author: string;
+  tags?: string[];
 }
 
 export async function getPostBySlug(slug: string): Promise<Post> {
@@ -37,6 +38,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
     coverImage: data.coverImage,
     contentHtml: contentHtml,
     author: data.author || 'AL HAPPY',
+    tags: data.tags || [],
   };
 }
 

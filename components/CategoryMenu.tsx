@@ -3,11 +3,19 @@
 import Link from 'next/link';
 import { useState } from 'react';
 
-interface CategoryMenuProps {
-  categories: string[];
+interface Post {
+  slug: string;
+  title: string;
+  category: string;
+  coverImage?: string;
 }
 
-export default function CategoryMenu({ categories }: CategoryMenuProps) {
+interface CategoryMenuProps {
+  categories: string[];
+  posts: Post[];
+}
+
+export default function CategoryMenu({ categories, posts }: CategoryMenuProps) {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
 
   return (
@@ -26,32 +34,58 @@ export default function CategoryMenu({ categories }: CategoryMenuProps) {
           </Link>
 
           {/* Categorías dinámicas */}
-          {categories.slice(0, 6).map((category) => (
-            <div 
-              key={category}
-              className="relative"
-              onMouseEnter={() => setActiveDropdown(category)}
-              onMouseLeave={() => setActiveDropdown(null)}
-            >
-              <button className="px-4 py-3 hover:bg-gray-800 transition-colors flex items-center">
-                {category}
-                <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
-                </svg>
-              </button>
-              
-              {activeDropdown === category && (
-                <div className="absolute top-full left-0 bg-gray-800 shadow-lg z-50 min-w-[200px]">
-                  <Link 
-                    href={`/categoria/${category.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="block px-4 py-2 hover:bg-[#e91e4d] transition-colors"
-                  >
-                    Ver todos los posts
-                  </Link>
-                </div>
-              )}
-            </div>
-          ))}
+          {categories.map((category) => {
+            const categorySlug = category.toLowerCase().replace(/\s+/g, '-');
+            const categoryPosts = posts.filter(p => p.category === category).slice(0, 3);
+
+            return (
+              <div 
+                key={category}
+                className="relative"
+                onMouseEnter={() => setActiveDropdown(category)}
+                onMouseLeave={() => setActiveDropdown(null)}
+              >
+                <Link 
+                  href={`/categoria/${categorySlug}`}
+                  className="px-4 py-3 hover:bg-gray-800 transition-colors flex items-center"
+                >
+                  {category}
+                  {categoryPosts.length > 0 && (
+                    <svg className="w-4 h-4 ml-1" fill="currentColor" viewBox="0 0 20 20">
+                      <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
+                    </svg>
+                  )}
+                </Link>
+                
+                {activeDropdown === category && categoryPosts.length > 0 && (
+                  <div className="absolute top-full left-0 bg-gray-800 shadow-lg z-50 min-w-[300px]">
+                    {categoryPosts.map((post) => (
+                      <Link 
+                        key={post.slug}
+                        href={`/${post.slug}`}
+                        className="flex items-center gap-3 px-4 py-3 hover:bg-[#e91e4d] transition-colors border-b border-gray-700 last:border-0"
+                      >
+                        {post.coverImage && (
+                          <img 
+                            src={post.coverImage} 
+                            alt={post.title}
+                            className="w-12 h-12 object-cover rounded"
+                          />
+                        )}
+                        <span className="text-sm line-clamp-2">{post.title}</span>
+                      </Link>
+                    ))}
+                    <Link 
+                      href={`/categoria/${categorySlug}`}
+                      className="block px-4 py-2 text-center text-xs bg-gray-900 hover:bg-[#e91e4d] transition-colors"
+                    >
+                      Ver todos los posts de {category} →
+                    </Link>
+                  </div>
+                )}
+              </div>
+            );
+          })}
 
           {/* Avisos Legales */}
           <div 

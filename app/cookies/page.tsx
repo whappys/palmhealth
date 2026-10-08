@@ -11,7 +11,7 @@ export default function CookiesPage() {
           Política de Cookies
         </h1>
         <time className="text-gray-600 text-sm">
-          Última actualización: {new Date().toLocaleDateString('es-ES', { year: 'numeric', month: 'long', day: 'numeric' })}
+          Última actualización: Octubre 2026
         </time>
       </header>
 

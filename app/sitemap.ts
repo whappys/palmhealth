@@ -5,17 +5,17 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const posts = await getAllPosts();
   
   const postUrls = posts.map((post) => ({
-    url: `https://palmshealth.vercel.app/${post.slug}`,
+    url: `https://palmhealth.vercel.app/${post.slug}`,
     lastModified: new Date(post.date),
   }));
 
   return [
     {
-      url: 'https://palmshealth.vercel.app',
+      url: 'https://palmhealth.vercel.app',
       lastModified: new Date(),
     },
     {
-      url: 'https://palmshealth.vercel.app/about',
+      url: 'https://palmhealth.vercel.app/about',
       lastModified: new Date(),
     },
     ...postUrls,

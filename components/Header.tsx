@@ -43,14 +43,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Barra de búsqueda oscura */}
-      <div className="bg-gray-800 py-3">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-end">
-          <button className="bg-[#e91e4d] text-white px-4 py-2 rounded hover:bg-[#c4163f]">
-            
-          </button>
-        </div>
-      </div>
+
     </header>
   );
 }

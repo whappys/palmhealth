@@ -68,12 +68,77 @@ Evalúa el estado cognitivo midiendo áreas como la orientación, memoria, atenc
 
 ---
 
+## 🧠 Escala de Demencia de Blessed (BDS)
+
+Evaluación orientativa del deterioro cognitivo basada en la funcionalidad diaria, memoria y comportamiento.
+
+**¿Qué evalúa?**
+- Actividades de la vida diaria (tareas, dinero, orientación)
+- Memoria, cambios de conducta y cuidado personal
+
+**¿Qué obtendrás?**
+- Puntuación total sobre 24
+- Clasificación del nivel de deterioro (Normal, leve, moderado o grave)
+
+[**👉 Usar la Escala de Blessed (BDS)**](/calculadora-bds)
+
+---
+
+## 🔥 Calculadora de Calorías y Metabolismo
+
+Estima tus necesidades calóricas diarias (TDEE) y calcula cuántas calorías debes consumir para alcanzar tu peso objetivo de forma segura.
+
+**¿Qué evalúa?**
+- Edad, género, peso y altura
+- Nivel de actividad física
+- Meta de peso y plazo
+
+**¿Qué obtendrás?**
+- Calorías de mantenimiento diario
+- Calorías objetivo personalizadas
+- Advertencia de seguridad si el déficit es muy agresivo
+
+[**👉 Usar la Calculadora de Calorías**](/calculadora-calorias)
+
+---
+
+## 📏 Calculadora de Índice Cintura/Cadera (ICC)
+
+Evalúa tu riesgo metabólico y cardiovascular comparando la medida de tu cintura con la de tu cadera.
+
+**¿Qué evalúa?**
+- Circunferencia de la cintura y cadera (en cm)
+- Género (para aplicar los umbrales de riesgo correctos)
+
+**¿Qué obtendrás?**
+- Tu ratio ICC exacto
+- Clasificación de riesgo (Bajo, Moderado o Alto)
+- Recomendación basada en guías de salud cardiovascular
+
+[**👉 Usar la Calculadora de ICC**](/calculadora-icc)
+
+---
+
+## 📏 Calculadora de IMC (Índice de Masa Corporal)
+
+Evalúa si tu peso está en un rango saludable según tu altura, utilizando los estándares de la Organización Mundial de la Salud (OMS).
+
+**¿Qué evalúa?**
+- Peso actual (en Kg)
+- Altura (en Cm)
+
+**¿Qué obtendrás?**
+- Tu número de IMC exacto
+- Clasificación (Bajo peso, Peso normal, Sobrepeso u Obesidad)
+- Una evaluación rápida de tu estado nutricional
+
+[**👉 Usar la Calculadora de IMC**](/calculadora-imc)
+
+---
+
 ## 📅 Próximamente
 
 Estamos trabajando en nuevas calculadoras para ayudarte a monitorear tu salud:
-
-### 📏 Calculadora de IMC (Índice de Masa Corporal)
-Evalúa si tu peso está en un rango saludable según tu altura.
 
 ### 🔥 Calculadora de Metabolismo Basal
 Descubre cuántas calorías quema tu cuerpo en reposo.

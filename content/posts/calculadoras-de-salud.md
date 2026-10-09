@@ -52,6 +52,22 @@ Compare sus lecturas con los valores normales recomendados según su edad y reci
 
 ---
 
+## 🧠 Calculadora MMSE (Mini Mental State Examination)
+
+Evalúa el estado cognitivo midiendo áreas como la orientación, memoria, atención y lenguaje. Ideal como herramienta de cribado inicial.
+
+**¿Qué evalúa?**
+- Orientación temporal y espacial
+- Memoria, atención y lenguaje
+
+**¿Qué obtendrás?**
+- Puntuación total sobre 30
+- Clasificación del estado cognitivo (Normal, deterioro leve, moderado o severo)
+
+[**👉 Usar la Calculadora MMSE**](/calculadora-mmse)
+
+---
+
 ## 📅 Próximamente
 
 Estamos trabajando en nuevas calculadoras para ayudarte a monitorear tu salud:

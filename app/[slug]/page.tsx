@@ -80,8 +80,7 @@ export default async function BlogPost({ params }: PageProps) {
           </div>
         </header>
 
-        {post.coverImage && (
-  {post.coverImage && (
+       {post.coverImage && (
   <img
     src={post.coverImage}
     alt={post.title}

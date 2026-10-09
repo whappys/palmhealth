@@ -146,6 +146,9 @@ Descubre cuántas calorías quema tu cuerpo en reposo.
 ### 🩸 Calculadora de Riesgo de Glucosa
 Monitorea tu riesgo de diabetes tipo 2.
 
+### 💧 Calculadora de Hidratación Diaria
+Descubre cuánta agua deberías beber según tu peso y actividad.
+
 ---
 
 ## 💡 Cómo usar estas calculadoras

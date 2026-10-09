@@ -81,13 +81,12 @@ export default async function BlogPost({ params }: PageProps) {
         </header>
 
         {post.coverImage && (
-  <div className="w-full h-80 bg-gray-50 mb-8 flex items-center justify-center">
-    <img
-      src={post.coverImage}
-      alt={post.title}
-      className="h-full w-full object-contain"
-    />
-  </div>
+  {post.coverImage && (
+  <img
+    src={post.coverImage}
+    alt={post.title}
+    className="w-full h-80 object-contain mb-8"
+  />
 )}
 
         {/* ✅ CAMBIO CLAVE: post.contentHtml (NO post.content) */}

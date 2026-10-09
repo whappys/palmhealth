@@ -37,6 +37,23 @@ Estima tu riesgo de enfermedad cardíaca a 10 años utilizando el **Índice de F
 
 ---
 
+## 🩺 Calculadora de Presión Arterial por Edad
+
+Compare sus lecturas con los valores normales recomendados según su edad y reciba información útil basada en pautas de la AHA/ACC.
+
+**¿Qué evalúa?**
+- Presión arterial sistólica y diastólica
+- Edad del usuario
+
+**¿Qué obtendrás?**
+- Clasificación de riesgo (Normal, Elevada, Hipertensión, etc.)
+- Comparación con los rangos ideales para su grupo de edad
+- Recomendaciones accionables
+
+[**👉 Usar la Calculadora de Presión Arterial**](/calculadora-presion-arterial)
+
+---
+
 ##  Próximamente
 
 Estamos trabajando en nuevas calculadoras para ayudarte a monitorear tu salud:

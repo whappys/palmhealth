@@ -85,7 +85,7 @@ export default async function BlogPost({ params }: PageProps) {
             src={post.coverImage}
             alt={post.title}
             loading="lazy"
-            className="w-full h-96 object-cover rounded-lg mb-8"
+            className="w-full h-auto rounded-lg mb-8 shadow-lg"
           />
         )}
 

@@ -7,8 +7,6 @@ coverImage: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&
 tags: ["calculadoras", "salud", "bienestar", "herramientas", "evaluación"]
 ---
 
-
-
 Bienvenido a nuestra colección de **calculadoras de salud gratuitas**. Estas herramientas interactivas te ayudarán a evaluar diferentes aspectos de tu salud, desde el riesgo cardiovascular hasta el bienestar metabólico.
 
 Todas nuestras calculadoras están basadas en fórmulas científicas validadas y son completamente gratuitas. Solo necesitas unos minutos para obtener resultados personalizados y recomendaciones accionables.
@@ -17,7 +15,7 @@ Todas nuestras calculadoras están basadas en fórmulas científicas validadas y
 
 ---
 
-##  Calculadora de Riesgo Cardiovascular
+## 🫀 Calculadora de Riesgo Cardiovascular
 
 Estima tu riesgo de enfermedad cardíaca a 10 años utilizando el **Índice de Framingham**, uno de los métodos más validados científicamente.
 
@@ -54,21 +52,18 @@ Compare sus lecturas con los valores normales recomendados según su edad y reci
 
 ---
 
-##  Próximamente
+## 📅 Próximamente
 
 Estamos trabajando en nuevas calculadoras para ayudarte a monitorear tu salud:
 
-### Calculadora de IMC (Índice de Masa Corporal)
+### 📏 Calculadora de IMC (Índice de Masa Corporal)
 Evalúa si tu peso está en un rango saludable según tu altura.
 
-### Calculadora de Metabolismo Basal
+### 🔥 Calculadora de Metabolismo Basal
 Descubre cuántas calorías quema tu cuerpo en reposo.
 
-### Calculadora de Glucosa en Ayunas
+### 🩸 Calculadora de Riesgo de Glucosa
 Monitorea tu riesgo de diabetes tipo 2.
-
-### Calculadora de Presión Arterial
-Clasifica tu presión arterial según las guías de la OMS.
 
 ---
 
@@ -83,7 +78,7 @@ Clasifica tu presión arterial según las guías de la OMS.
 
 ## 📚 Recursos adicionales
 
-¿Te interesa profundizar en tu salud cardiovascular? Te recomendamos leer:
+¿Te interesa profundizar en tu salud? Te recomendamos leer:
 
 - [¿Se Puede Ganar Masa Muscular con Mancuernas de 12 Libras?](/ganar-masa-muscular-mancuernas-12-libras)
 - [¿Cuál sistema de salud es mejor para vivir?](/sistema-de-salud)

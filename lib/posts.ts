@@ -61,7 +61,7 @@ export async function getPostBySlug(slug: string): Promise<Post> {
   return {
     slug: realSlug,
     title: data.title || 'Sin título',
-    date: data.date || new Date().toISOString(),
+    date: data.date || '2026-01-01',
     category: data.category || 'General',
     excerpt: data.excerpt || '',
     coverImage: data.coverImage,
